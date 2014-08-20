@@ -1,0 +1,18 @@
+.btn-default {
+	width: 50px;
+}
+
+.center-parent {
+   display:table;
+}
+
+.center-child {
+   display:table-cell;
+   vertical-align:middle;
+   text-align:center;
+   padding-top: 20%;
+}
+
+#recipe{
+	padding-left: 30px;
+}

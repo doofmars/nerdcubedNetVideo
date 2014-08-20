@@ -1,0 +1,7 @@
+.project
+.settings/
+Thumbs.db
+jquery-2.1.0.js
+
+# Folder config file
+Desktop.ini
