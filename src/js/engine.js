@@ -55,7 +55,8 @@ function shuffle() {
 
 //loads the image and title into the site
 function setGame(id){
-	$('#name_game' + id).html(recipes[id].name);
+	
+	$('#name_game' + id).html(replaceAll(recipes[id].name, '_', ' '));
 	$('#image_game' + id).attr("src", "img/" + recipes[id].name + ".jpg" );
 }
 
@@ -187,4 +188,9 @@ function getKeyDisplayFormat(key){
     default:
         return key.toUpperCase();
 	} 
+}
+
+//function to replace all occurrences of a string in JavaScript
+function replaceAll(str, find, replace) {
+  return str.replace(new RegExp(find, 'g'), replace);
 }
